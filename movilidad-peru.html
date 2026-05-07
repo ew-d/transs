@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f3ede4">
+  <title>Movilidad Urbana del Perú — Diagnóstico y Futuro</title>
+  <link rel="stylesheet" href="movilidad-peru.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════
+     NAV
+══════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="brand">Movilidad<span>·</span>PE</div>
+  <ul>
+    <li><a href="#diagnostico">Diagnóstico</a></li>
+    <li><a href="#informal">Sistema actual</a></li>
+  </ul>
+  <div class="meta">ED. 01 / 2026</div>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Menú móvil overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#diagnostico">Diagnóstico</a>
+  <a href="#informal">Sistema actual</a>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Texto -->
+      <div>
+        <div class="eyebrow">Informe especial · Transporte urbano</div>
+        <h1>
+          Repensar <em>la</em><br>
+          <span class="stroke">ciudad</span> que<br>
+          nos <em>mueve</em>.
+        </h1>
+        <p class="hero-lead">
+          Perú se mueve sobre un parque automotor envejecido, corredores informales
+          y una gestión que aún sirve al vehículo antes que al ciudadano.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="num">14.5<small>años</small></div>
+            <div class="lbl">Edad promedio del parque automotor</div>
+          </div>
+          <div class="stat">
+            <div class="num">60<small>%</small></div>
+            <div class="lbl">Viajes urbanos menores a 8 km</div>
+          </div>
+          <div class="stat">
+            <div class="num">17<small>×</small></div>
+            <div class="lbl">Costo Metro vs. BRT por kilómetro</div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        ╔══════════════════════════════════╗
+        ║  IMAGEN 1                        ║
+        ║  Vista aérea / panorámica del    ║
+        ║  tráfico de Lima                 ║
+        ║  Ruta: img/01-hero-lima.jpg      ║
+        ║  Formato: vertical  4 : 5        ║
+        ╚══════════════════════════════════╝
+      -->
+      <div class="hero-img-wrap">
+        <span class="tag">Lima · 2026</span>
+        <img src="img/lima-ciudad.avif" alt="Vista aérea del tráfico de Lima">
+        <span class="corner">01 / 05</span>
+      </div>
+
+    </div>
+
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>Electromovilidad</span><span class="dot">●</span>
+        <span>Ciudad de 15 minutos</span><span class="dot">●</span>
+        <span>Desarrollo Orientado al Transporte</span><span class="dot">●</span>
+        <span>Intermodalidad</span><span class="dot">●</span>
+        <span>BRT</span><span class="dot">●</span>
+        <span>Micromovilidad eléctrica</span><span class="dot">●</span>
+        <span>Electromovilidad</span><span class="dot">●</span>
+        <span>Ciudad de 15 minutos</span><span class="dot">●</span>
+        <span>Desarrollo Orientado al Transporte</span><span class="dot">●</span>
+        <span>Intermodalidad</span><span class="dot">●</span>
+        <span>BRT</span><span class="dot">●</span>
+        <span>Micromovilidad eléctrica</span><span class="dot">●</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════════════════
+     DIAGNÓSTICO
+══════════════════════════════════════════════════ -->
+<section id="diagnostico">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="section-num">CAPÍTULO<span>01</span></div>
+      <h2 class="section-title">
+        El diagnóstico: una ciudad que se mueve <em>mal</em>,
+        no una ciudad con demasiados autos.
+      </h2>
+    </div>
+
+    <div class="diag-grid">
+
+      <!--
+        ╔══════════════════════════════════════╗
+        ║  IMAGEN 2                            ║
+        ║  Tráfico a nivel de calle: combis    ║
+        ║  o cúster antiguas, contaminación    ║
+        ║  Ruta: img/02-diagnostico-combis.jpg ║
+        ║  Formato: vertical  4 : 5            ║
+        ╚══════════════════════════════════════╝
+      -->
+      <div class="diag-img-wrap">
+        <span class="tag">Diagnóstico</span>
+        <img src="img/diagnostico-lima.png" alt="Tráfico e informalidad en Lima">
+      </div>
+
+      <div class="diag-list">
+        <div class="diag-item">
+          <div class="k">01</div>
+          <div>
+            <h3>Atraso regional</h3>
+            <p>Perú lleva años de retraso frente a Chile y Colombia en leyes y ejecución de electromovilidad.</p>
+          </div>
+        </div>
+        <div class="diag-item">
+          <div class="k">02</div>
+          <div>
+            <h3>Parque automotor envejecido</h3>
+            <p>Promedio de 14.5 años, con altos niveles de informalidad y "piratería" en corredores estratégicos.</p>
+          </div>
+        </div>
+        <div class="diag-item">
+          <div class="k">03</div>
+          <div>
+            <h3>Contaminación letal</h3>
+            <p>La contaminación ambiental causa miles de muertes prematuras al año solo en Lima Metropolitana.</p>
+          </div>
+        </div>
+        <div class="diag-item">
+          <div class="k">04</div>
+          <div>
+            <h3>Gestión, no cantidad</h3>
+            <p>La densidad vehicular de Lima es baja. El problema real es el desorden y la ausencia de transporte público eficiente.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+     CITA
+══════════════════════════════════════════════════ -->
+<div class="pull">
+  <div class="pull-inner">
+    <div class="pull-mark">"</div>
+    <blockquote>
+      El chip debe cambiar: dejar de <em>servir al vehículo</em>
+      para empezar a <em>servir al ciudadano</em>.
+    </blockquote>
+    <cite>— Eje conceptual del informe</cite>
+  </div>
+</div>
+
+
+
+
+<!-- ══════════════════════════════════════════════════
+     SISTEMA ACTUAL / TRANSPORTE INFORMAL
+══════════════════════════════════════════════════ -->
+<section id="informal">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="section-num">CAPÍTULO<span>02</span></div>
+      <h2 class="section-title">
+        El sistema que <em>ya existe</em>:
+        buses, combis y mototaxis.
+      </h2>
+    </div>
+
+    <div class="informal-grid">
+
+      <!--
+        ╔══════════════════════════════════════════╗
+        ║  IMAGEN 5                                ║
+        ║  Paradero informal: combi o cúster con   ║
+        ║  cobrador y pasajeros subiendo            ║
+        ║  Ruta: img/05-informal-combi.jpg         ║
+        ║  Formato: horizontal  5 : 4              ║
+        ╚══════════════════════════════════════════╝
+      -->
+      <div class="informal-img-wrap">
+        <span class="tag">Realidad actual</span>
+        <img src="img/hans-traffic-3922.jpg" alt="Transporte informal: combis en Lima">
+      </div>
+
+      <div class="informal-text">
+        <h3>Ignorar no es resolver</h3>
+        <h2>Formalizar e <em>integrar</em>, no eliminar.</h2>
+        <p>Buses, combis, cústers y mototaxis transportan a la mayoría de peruanos cada día. El reto no es expulsarlos — es ordenarlos, profesionalizarlos e integrarlos al sistema masivo.</p>
+        <p>La propuesta: convertir a los mototaxis en alimentadores oficiales de los grandes corredores en zonas de difícil acceso, con tarjetas integradas y pago único entre todos los modos.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+     CIERRE
+══════════════════════════════════════════════════ -->
+<div class="end">
+  <div class="end-inner">
+    <div class="eyebrow">Llamado a la acción</div>
+    <h2>Una ciudad <em>se diseña</em>.<br>O se padece.</h2>
+    <p>El transporte no es un problema técnico: es una decisión política y cultural sobre qué tipo de ciudad queremos habitar en los próximos veinte años.</p>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+<footer>
+  <div class="foot-inner">
+    <div class="brand">Movilidad<span style="color:var(--accent)">·</span>PE</div>
+    <p>Informe basado en entrevista pública · Edición 01 / 2026</p>
+    <p>© Diseño editorial</p>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════════════
+     JS — Menú móvil hamburguesa
+══════════════════════════════════════════════════ -->
+<script>
+  const btn  = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+  });
+
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
+
+</body>
+</html>
